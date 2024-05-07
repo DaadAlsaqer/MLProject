@@ -35,13 +35,13 @@ html_temp2 = """
 st.markdown(html_temp2, unsafe_allow_html=True)
 
 with st.form(key="form"):
-    bhk = st.number_input("Please insert the BHK", value=None, placeholder="Type a number...", min_value=1, max_value=6)
-    size = st.number_input("Please insert the Size", value=None, placeholder="Type a number...", min_value=10, max_value=8000)
+    bhk = st.number_input("Please insert the BHK", value=None, placeholder="Type a number...", min_value=1, max_value=4)
+    size = st.number_input("Please insert the Size", value=None, placeholder="Type a number...", min_value=10, max_value=2210)
     area_type = st.selectbox("Please select Area Type", ['Super Area', 'Carpet Area', 'Built Area'])
     city = st.selectbox("Please select City", ['Kolkata', 'Mumbai', 'Bangalore', 'Delhi', 'Chennai', 'Hyderabad'])
     furnishing_status = st.selectbox("Please select Furnishing Status", ['Unfurnished', 'Semi-Furnished', 'Furnished'])
     tenant_preferred = st.selectbox("Please select Tenant Preferred", ['Bachelors/Family', 'Bachelors', 'Family'])
-    bathroom = st.number_input("Please insert the Number of Bathrooms", value=None, placeholder="Type a number...", min_value=1, max_value=10)
+    bathroom = st.number_input("Please insert the Number of Bathrooms", value=None, placeholder="Type a number...", min_value=1, max_value=4)
     point_of_contact= st.selectbox("Please select Point of Contact", ['Contact Owner', 'Contact Agent', 'Contact Builder'])
     submit = st.form_submit_button()
 
