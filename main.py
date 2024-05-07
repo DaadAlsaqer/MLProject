@@ -5,7 +5,7 @@ import time
 
 df = pd.read_csv('House_Rent_Dataset.csv')
 df = df.drop(['Area Locality', 'Floor', 'Posted On', 'Rent'], axis=1)
-mlp_model = pickle.load(open("mlp_model.p", "rb"))
+mlp_model = pickle.load(open("mlp_model.pkl", "rb"))
 
 def show_output ():
     l = [int(bhk), int(size), area_type, city, furnishing_status, tenant_preferred, int(bathroom), point_of_contact]
